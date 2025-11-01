@@ -1,0 +1,25 @@
+{
+  "HttpFactorySettings": {
+    "PollingSettings": {
+      "Retries": 60,
+      "TimeBetweenRetriesMs": "1000"
+    },
+    "SerializerOptions": {
+      "PropertyNameCaseInsensitive": true
+    },
+    "HttpClients": {
+      "Generator": {
+        "Url": "https://example.com/client1",
+        "UseCookieContainer": true,
+        "Headers": {
+          "User-Agent": "YourAppUserAgent",
+          "Accept": "application/json"
+        }
+      },
+      "Jsonplaceholder": {
+        "Url": "https://jsonplaceholder.typicode.com",
+        "UseCookieContainer": false
+      }
+    }
+  }
+}
